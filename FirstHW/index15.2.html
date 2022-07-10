@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      background-color: #ffeb95;
+    }
+    .bc{
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      font-weight: bolder;
+      font-family: Verdana, monospace;
+    }
+    /*.calc:hover{
+        transition-duration: 1s;
+        transition-delay: 1s;
+        transition-timing-function:easy;
+    }*/
+    .calc{
+      height: 70px;
+      width: 65px;
+      transform: rotate(320deg);
+      position: relative;
+      left: 105px;
+      top: 20px;
+      transition: 3s;
+      animation: AnimCalc 2s linear alternate 1;
+    }
+    @keyframes AnimCalc {
+      from{
+        top: 150px;
+      }
+      to{
+        top: 20px;
+      }
+    }
+    .book{
+      height: 100px;
+      width: 95px;
+      transform: rotate(350deg);
+      position: relative;
+      left: 105px;
+      animation: AnimBook 2s linear alternate 1;
+    }
+    @keyframes AnimBook {
+      from{
+        top: 150px;
+      }
+      to{
+        top: 0;
+      }
+    }
+    .paper{
+      height: 100px;
+      width: 95px;
+      transform: rotate(10deg);
+      position: relative;
+      left: 105px;
+      animation: AnimPaper 2s linear alternate 1;
+    }
+    @keyframes AnimPaper {
+      from{
+        top: 150px;
+      }
+      to{
+        top: 0;
+      }
+    }
+    .pallet{
+      height: 70px;
+      width: 65px;
+      transform: rotate(220deg);
+      position: relative;
+      left: 105px;
+      top: 20px;
+      right: 10px;
+      animation: AnimPallet 2s linear alternate 1;
+    }
+    @keyframes AnimPallet {
+      from {
+        top: 150px;
+      }
+      to {
+        top: 20px;
+      }
+    }
+    .pencil{
+      height: 65px;
+      width: 60px;
+      transform: rotate(90deg);
+      position: relative;
+      left: 230px;
+      animation: AnimPencil 2s linear alternate 1;
+    }
+    @keyframes AnimPencil {
+      from{
+        top: 150px;
+      }
+      to{
+        top: 0;
+      }
+  </style>
+</head>
+<body>
+<div class="bc">Hello, my site!</div>
+<div><img src="media/calc.png" class="calc"><img src="media/book.png" class="book">
+  <img src="media/paper.png" class="paper"><img src="media/pallete.png" class="pallet"></div>
+<div><img src="media/pencil.png" class="pencil"></div>
+</body>
+</html>

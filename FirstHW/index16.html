@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .circle{
+            height: 300px;
+            width: 300px;
+            border: 3px solid #0a8f75;
+            border-radius: 50%;
+        }
+        .circleSmall{
+            height: 10px;
+            width: 10px;
+            background-color: #0a8f75;
+            border-radius: 50%;
+            position: relative;
+            left: 144px;
+            top: 145px;
+        }
+        .rectangle{
+            height: 150px;
+            width: 3px;
+            background-color: #0a8f75;
+            position: relative;
+            left: 148px;
+            bottom: 10px;
+            animation: AnimRectangle 3600s linear infinite;
+            transform-origin: bottom;
+        }
+        @keyframes AnimRectangle{
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .rectangleS{
+            height: 150px;
+            width: 1px;
+            background-color: #0a8f75;
+            position: relative;
+            left: 149px;
+            bottom: 240px;
+            animation: AnimRectangleS 60s linear infinite;
+            transform-origin: bottom;
+        }
+        @keyframes AnimRectangleS{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .rectangleSmall{
+            height: 80px;
+            width: 5px;
+            background-color: #0a8f75;
+            position: relative;
+            left: 147px;
+            bottom: 90px;
+            animation: AnimRectangleSmall 43200s infinite;
+            transform-origin: 2px bottom;
+        }
+        @keyframes AnimRectangleSmall{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="circle">
+    <div class="circleSmall"></div>
+    <div class="rectangle"></div>
+    <div class="rectangleSmall"></div>
+    <div class="rectangleS"></div>
+</div>
+</body>
+</html>

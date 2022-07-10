@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #text{
+            text-align: center;
+            font-family: Helvetica, monospace;
+            line-height: 100px;
+        }
+        .rectangle1{
+            left: 163px;
+            bottom: 70px;
+        }
+        .rectangle{
+            height: 50px;
+            width: 100px;
+            background-color: darkred;
+            position: relative;
+            border: 3px solid #480909;
+        }
+        .rectangle2{
+            left: 269px;
+            bottom: 126px;
+        }
+        .rectangle:hover{
+            transform: scaleX(40%) skewX(45deg) /*skewY(85deg)*/;
+            transform-origin:
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+<div id="text">HELLO!
+    <div class="rectangle1 rectangle"></div>
+    <div class="rectangle2 rectangle"></div>
+</div>
+</body>
+</html>

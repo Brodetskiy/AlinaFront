@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .text{
+            text-align: center;
+            line-height: 2550%;
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .trapezoid1{
+            border-bottom: 180px solid red;
+            border-left: 0 solid transparent;
+            border-right: 0 solid transparent;
+            height: 0;
+            width: 90px;
+            position: absolute;
+            top: 24%;
+            left: 25%;
+            transform: rotate(90deg);
+        }
+        .trapezoid1:hover{
+            border-bottom: 100px solid red;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 70px;
+            transform: rotate(90deg);
+            transition: 2s;
+        }
+        .trapezoid2{
+            border-bottom: 180px solid red;
+            border-left: 0 solid transparent;
+            border-right: 0 solid transparent;
+            height: 0;
+            width: 90px;
+            position: absolute;
+            top: 24%;
+            left: 57%;
+            transform: rotate(270deg);
+        }
+        .trapezoid2:hover {
+            border-bottom: 100px solid red;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            height: 0;
+            width: 70px;
+            transform: scale(270deg);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+<div class="text">HELLO!
+    <div class="trapezoid1"></div>
+    <div class="trapezoid2"></div>
+</div>
+</body>
+</html>
